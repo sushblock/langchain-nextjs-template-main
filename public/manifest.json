@@ -1,0 +1,30 @@
+{
+    "name": "Celestial - your everyday AI",
+    "short_name": "Celestial",
+    "description": "AI for your daily needs!",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "id": "/",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "icon-512x512.png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "icon-192x192.png",
+        "sizes": "192x192",
+        "purpose": "maskable"
+      },
+      {
+        "src": "favicon-16x16.png",
+        "sizes": "16x16"
+      },      
+      {
+        "src": "favicon-32x32.png",
+        "sizes": "32x32"
+      }
+    ]
+  }

@@ -1,4 +1,7 @@
+"use client";
+
 import { ChatWindow } from "@/components/ChatWindow";
+import { LandingNavbar } from "@/components/landing-navbar";
 
 export default function AgentsPage() {
   const InfoCard = (
@@ -100,6 +103,8 @@ export default function AgentsPage() {
     </div>
   );
   return (
+    <div className="h-full ">
+      <LandingNavbar />
     <ChatWindow
       endpoint="api/chat/retrieval"
       emptyStateComponent={InfoCard}
@@ -110,5 +115,6 @@ export default function AgentsPage() {
       emoji="🐶"
       titleText="Dana the Document-Retrieving Dog"
     ></ChatWindow>
+    </div>
   );
 }

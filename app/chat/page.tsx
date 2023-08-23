@@ -1,4 +1,7 @@
+"use client";
+
 import { ChatWindow } from "@/components/ChatWindow";
+import { LandingNavbar } from "@/components/landing-navbar";
 
 export default function Home() {
   const InfoCard = (
@@ -69,12 +72,18 @@ export default function Home() {
     </div>
   );
   return (
-    <ChatWindow
+
+    <div className="h-full ">
+      <LandingNavbar />
+      <ChatWindow
       endpoint="api/chat"
       emoji="🏴‍☠️"
       titleText="Patchy the Chatty Pirate"
       placeholder="I'm an LLM pretending to be a pirate! Ask me about the pirate life!"
       emptyStateComponent={InfoCard}
     ></ChatWindow>
+    </div>
+
+    
   );
 }
